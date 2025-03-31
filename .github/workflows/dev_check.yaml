@@ -1,0 +1,15 @@
+name: "Dev Check"
+
+on:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    check:
+        uses: ./.github/workflows/jsonrest_check_base.yaml
+        with:
+            working-directory: .
+            stack-name: "integration-stack"
+            environment: "dev"
+            aws-region: "ap-southeast-2"

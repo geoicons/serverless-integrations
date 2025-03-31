@@ -1,0 +1,19 @@
+{
+    "name": "lambda-sns",
+    "version": "1.0.0",
+    "description": "SNS-triggered Lambda handler",
+    "main": "service.js",
+    "author": "GEO",
+    "license": "UNLICENSED",
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.1531.0"
+    },
+    "devDependencies": {
+        "@types/aws-lambda": "^8.10.0",
+        "typescript": "^4.9.0"
+    }
+}
